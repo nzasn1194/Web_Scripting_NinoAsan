@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="validation.js" defer></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <form action="login.php" method="POST" onsubmit="return validateLoginForm()">
+      
+      <div class="form-group">
+        <label for="login_username">Username:</label>
+        <input type="text" name="username" id="login_username" required>
+      </div>
+
+      <div class="form-group">
+        <label for="login_password">Password:</label>
+        <input type="password" name="password" id="login_password" required>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+
+    </form>
+    
+    <div class="form-links">
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </div>
+</body>
+</html>
